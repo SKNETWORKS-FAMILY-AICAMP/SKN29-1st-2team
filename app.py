@@ -14,7 +14,7 @@ with st.sidebar:
     # st.title("🚗 TEAM PROJECT")
     # 2. 인터넷에 있는 GIF URL로 바로 불러오기
     st.image("https://cdn-icons-gif.flaticon.com/7308/7308525.gif", use_container_width=True)
-    st.write("---")
+
     # st.page_link로 클릭 시 해당 페이지로 전환
     st.page_link("app.py", label="📊 차량 등록 현황")
     st.page_link("pages/1_소득_vs_외제차.py", label="💰 소득 vs 외제차")
