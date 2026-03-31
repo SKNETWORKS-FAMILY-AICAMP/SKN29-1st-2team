@@ -4,7 +4,10 @@
 
 ## 팀 소개
 팀원 : 김재홍, 김지훈, 정영석, 김정민
-**개발 기간**: 2025.03.25 - 2025.03.31(총 7일)
+
+## 개발 기간
+2025.03.25 - 2025.03.31(총 7일)
+
 ---
 ## 프로젝트 개요
 
@@ -45,40 +48,56 @@
 ## 파일구조
 ```
 project/
-    ├── data/                              # 분석에 사용되는 전처리된 데이터 파일
-    │   ├── 00.income_sigungu_yearly.csv   # 지역별 연간 소득 데이터
-    │   ├── 01.car_sido_monthly.csv        # 시도별 차량 등록 데이터
-    │   ├── 02.car_sigungu_monthly.csv     # 시군구별 차량 등록 데이터
-    │   ├── 03.car_importedcar_sigungu_monthly.csv  # 외제차 등록 데이터
-    │   ├── 04.car_sido_culmulagegender_totmonthly.csv  # 연령/성별 차량 데이터
-    │   ├── 10.car_fuel_sido_totmonthly.csv          # 연료별 차량 데이터
-    │   ├── 15.car_culmulmodyear_totmonthly.csv      # 연식별 차량 데이터
-    │   ├── 20.car_sido_newreg_totmonthly.csv        # 신규 등록 차량 데이터
-    │   └── 21.car_sido_newcumulcartotmonthly.csv   # 누적 차량 데이터
+└── SKN29-1st-2team-main/
+    ├── data/                      # 분석용 원본 데이터
+    │   ├── 00.income_sigungu_yearly.csv
+    │   ├── 01.car_sido_monthly.csv
+    │   ├── 02.car_sigungu_monthly.csv
+    │   ├── 03.car_importedcar_sigungu_monthly.csv
+    │   ├── 04.car_sido_culmulagegender_totmonthly.csv
+    │   ├── 10.car_fuel_sido_totmonthly.csv
+    │   ├── 15.car_culmulmodyear_totmonthly.csv
+    │   ├── 20.car_sido_newreg_totmonthly.csv
+    │   └── 21.car_sido_newcumulcartotmonthly.csv
     │
-    ├── pages/                             # Streamlit 멀티페이지 구성
-    │   ├── 1소득vs외제차.py            # 소득과 외제차 보유 관계 분석
-    │   ├── 2연료별비중.py               # 연료별 차량 비중 분석
-    │   ├── 3연령대성별.py              # 연령 및 성별 차량 분석
-    │   └── 4_FAQ.py                      # 자주 묻는 질문 페이지
+    ├── images/                    # 시각화 이미지 및 결과물
+    │   ├── 1-1.main.png
+    │   ├── 1-2.top5.png
+    │   ├── 2-1.income.png
+    │   ├── 2-2.fuel.png
+    │   ├── 2-3.agegender.png
+    │   ├── 3-1.FAQ1.png
+    │   ├── 3-2.FAQ2.png
+    │   └── 3-3.FAQ3.png
     │
-    ├── .env                               # 환경 변수 (DB 정보 등, git 제외 권장)
-    ├── .gitignore                         # Git 추적 제외 파일 설정
-    ├── README.md                          # 프로젝트 설명 문서
+    ├── pages/                     # Streamlit 페이지별 기능 구현
+    │   ├── 1소득vs외제차.py
+    │   ├── 2연료별비중.py
+    │   ├── 3연령대성별.py
+    │   └── 4_FAQ.py
     │
-    ├── 01_create_db.py                    # 데이터베이스 생성 스크립트
-    ├── 02_load_data.py                    # 데이터 DB 적재 스크립트
-    ├── 03_load_faq_data.py                # FAQ 데이터 적재
+    ├── 01_create_db.py            # DB 생성 스크립트
+    ├── 02_load_data.py            # 데이터 적재 스크립트
+    ├── 03_load_faq_data.py        # FAQ 데이터 적재
+    ├── app.py                     # 메인 Streamlit 앱 실행 파일
+    ├── db_manager.py              # DB 연결 및 관리 모듈
     │
-    ├── app.py                             # 메인 Streamlit 실행 파일
-    └── db_manager.py                      # DB 연결 및 쿼리 관리 모듈
+    ├── README.md                  # 프로젝트 설명 문서
+    └── .gitignore                 # Git 제외 파일 설정
 ```
 
 ## 데이터베이스 구조
 ![설명](images/erd.png)
 
 ## 프로젝트 시연
-
+![설명](images/1-1.main.png)
+![설명](images/1-2.main.png)
+![설명](images/2-1.main.png)
+![설명](images/2-2.main.png)
+![설명](images/2-3.main.png)
+![설명](images/3-1.main.png)
+![설명](images/3-2.main.png)
+![설명](images/3-3.main.png)
 
 ## 기대 효과
 - 연령대별, 지역별, 연료별 차량 선호도에 대한 인사이트와 시각화 플랫폼 제공
