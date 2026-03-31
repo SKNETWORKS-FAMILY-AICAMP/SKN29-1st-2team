@@ -91,13 +91,13 @@ project/
 
 ## 프로젝트 시연
 ![설명](images/1-1.main.png)
-![설명](images/1-2.main.png)
-![설명](images/2-1.main.png)
-![설명](images/2-2.main.png)
-![설명](images/2-3.main.png)
-![설명](images/3-1.main.png)
-![설명](images/3-2.main.png)
-![설명](images/3-3.main.png)
+![설명](images/1-2.top5.png)
+![설명](images/2-1.income.png)
+![설명](images/2-2.fuel.png)
+![설명](images/2-3.agegender.png)
+![설명](images/3-1.FAQ1.png)
+![설명](images/3-2.FAQ2.png)
+![설명](images/3-3.FAQ3.png)
 
 ## 기대 효과
 - 연령대별, 지역별, 연료별 차량 선호도에 대한 인사이트와 시각화 플랫폼 제공
