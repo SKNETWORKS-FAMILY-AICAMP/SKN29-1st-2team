@@ -43,6 +43,7 @@
 - 현대자동차 차량정비(https://www.hyundai.com/kr/ko/e/customer/center/faq)
 
 ## 파일구조
+```
 project/
     ├── data/                              # 분석에 사용되는 전처리된 데이터 파일
     │   ├── 00.income_sigungu_yearly.csv   # 지역별 연간 소득 데이터
@@ -71,6 +72,7 @@ project/
     │
     ├── app.py                             # 메인 Streamlit 실행 파일
     └── db_manager.py                      # DB 연결 및 쿼리 관리 모듈
+```
 
 ## 데이터베이스 구조
 ![설명](images/erd.png)
